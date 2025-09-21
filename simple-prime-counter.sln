@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36429.23 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SingleThreaded", "SingleThreaded\SingleThreaded.vcxproj", "{78B5A589-8F56-47A1-B351-F65B369A6A35}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\Core.vcxitems", "{82B1B76E-7852-4271-B0CC-63F636804826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
