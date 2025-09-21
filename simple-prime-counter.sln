@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36429.23 d17.14
+VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SingleThreaded", "SingleThreaded\SingleThreaded.vcxproj", "{78B5A589-8F56-47A1-B351-F65B369A6A35}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\Core.vcxitems", "{82B1B76E-7852-4271-B0CC-63F636804826}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTest", "GTest\GTest.vcxproj", "{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,14 @@ Global
 		{78B5A589-8F56-47A1-B351-F65B369A6A35}.Release|x64.Build.0 = Release|x64
 		{78B5A589-8F56-47A1-B351-F65B369A6A35}.Release|x86.ActiveCfg = Release|Win32
 		{78B5A589-8F56-47A1-B351-F65B369A6A35}.Release|x86.Build.0 = Release|Win32
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Debug|x64.ActiveCfg = Debug|x64
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Debug|x64.Build.0 = Debug|x64
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Debug|x86.Build.0 = Debug|Win32
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x64.ActiveCfg = Release|x64
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x64.Build.0 = Release|x64
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x86.ActiveCfg = Release|Win32
+		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
