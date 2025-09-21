@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Primality">
+      <UniqueIdentifier>{34e22da8-3ea4-462f-9252-3ed4cb02740f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Primality\ProceduralTrialDivision.cpp">
+      <Filter>Primality</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Primality\TrialDivision.cpp">
+      <Filter>Primality</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Primality\ProceduralTrialDivision.hpp">
+      <Filter>Primality</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Primality\TrialDivision.hpp">
+      <Filter>Primality</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
