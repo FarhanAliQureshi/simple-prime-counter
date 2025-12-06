@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11222.15 d18.0
+VisualStudioVersion = 18.0.11222.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SingleThreaded", "SingleThreaded\SingleThreaded.vcxproj", "{78B5A589-8F56-47A1-B351-F65B369A6A35}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrimalityLib", "PrimalityLib\PrimalityLib.vcxproj", "{EEB09260-B346-4F13-BE17-58AD5ACEF3C4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTests", "GoogleTests\GoogleTests.vcxproj", "{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToolsLib", "ToolsLib\ToolsLib.vcxproj", "{707E9071-9B8A-48D6-835D-49F2828EE193}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x64.Build.0 = Release|x64
 		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x86.ActiveCfg = Release|Win32
 		{7A6A8C7A-AE43-4686-AED7-94A779DAF9EB}.Release|x86.Build.0 = Release|Win32
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Debug|x64.ActiveCfg = Debug|x64
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Debug|x64.Build.0 = Debug|x64
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Debug|x86.ActiveCfg = Debug|Win32
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Debug|x86.Build.0 = Debug|Win32
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Release|x64.ActiveCfg = Release|x64
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Release|x64.Build.0 = Release|x64
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Release|x86.ActiveCfg = Release|Win32
+		{707E9071-9B8A-48D6-835D-49F2828EE193}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
