@@ -1,3 +1,21 @@
+#ifndef __STDCPP_THREADS__
+#error "C++ Multi-threading is not available. Compilation aborted."
+#endif
+
+#if defined(_WIN32) || defined(_WIN64)
+#pragma message("Platform: Windows")
+#else
+#pragma message("Platform: Not Windows")
+#endif
+
+#ifdef __GNUC__
+#pragma message("Compiler: GCC")
+#else
+#ifdef _MSC_VER
+#pragma message("Compiler: Visual C++")
+#endif
+#endif
+
 #include "pch.hpp"
 #include <iostream>
 #include <mutex>
@@ -38,7 +56,12 @@ int main()
 {
     std::cout << "Prime Counter - Multi Threaded" << std::endl;
 
+#ifdef _DEBUG
     m_findPrimesUpto = 1000;
+#else
+    m_findPrimesUpto = 20000000;
+#endif
+
     int threadCount = std::thread::hardware_concurrency();
     Tools::Stopwatch stopWatch;
     std::cout << "Finding primes up to " << Tools::FormatNumberWithSeparator(m_findPrimesUpto) << " with " << threadCount << " threads..." << std::endl;

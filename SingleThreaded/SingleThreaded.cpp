@@ -8,8 +8,13 @@ int main(void)
 {
     std::cout << "Prime Counter - Single Threaded" << std::endl;
 
-    long primesFound = 0;
+#ifdef _DEBUG
     long findPrimesUpto = 1000;
+#else
+    long findPrimesUpto = 20000000;
+#endif
+
+    long primesFound = 0;
     Tools::Stopwatch stopWatch;
     Primality::TrialDivision trialDivision;
 
