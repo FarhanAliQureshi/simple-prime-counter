@@ -15,23 +15,28 @@ namespace Tools
 
     void Stopwatch::end()
     {
+        // If stopwatch was never started using start() then there is no point of
+        // proceeding further.
+        if (_start == std::chrono::steady_clock::time_point())
+            return;
+
         _end = std::chrono::high_resolution_clock::now();
         _elapsed_seconds = _end - _start;
         _elapsed_milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(_end - _start).count();
         _elapsed_nanoseconds = std::chrono::duration_cast<std::chrono::nanoseconds>(_end - _start).count();
     }
 
-    double Stopwatch::get_elapsed_seconds()
+    double Stopwatch::get_elapsed_seconds() const
     {
         return _elapsed_seconds.count();
     }
 
-    long long Stopwatch::get_elapsed_milliseconds()
+    long long Stopwatch::get_elapsed_milliseconds() const
     {
         return _elapsed_milliseconds;
     }
 
-    long long Stopwatch::get_elapsed_nanoseconds()
+    long long Stopwatch::get_elapsed_nanoseconds() const
     {
         return _elapsed_nanoseconds;
     }
